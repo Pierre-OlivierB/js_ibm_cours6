@@ -8,5 +8,36 @@ body {
   height: 100vh;
 }
 .container {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 50%;
+}
+.container table {
+  margin: 0 auto;
   border: 1px solid black;
+  width: 50%;
+  height: 50%;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+input:active,
+input {
+  border: 1px solid transparent;
+}
+form input[type="button"]:hover {
+  background: hsl(0, 100%, 75%);
+}
+form input[type="button"]:active {
+  background: hsl(240, 100%, 75%);
+  transform: scale(0.8);
+}
+form input[type="number"]:in-range {
+  border: 2px solid hsl(120, 100%, 75%);
+}
+form input[type="number"]:out-of-range {
+  border: 5px solid hsl(0, 100%, 75%);
 }
