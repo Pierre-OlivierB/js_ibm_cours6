@@ -82,15 +82,24 @@ arrA = [arrAA, arrAB, arrAC];
 try {
   for (let i = 0; i < 4; i++) {
     //   console.log(arrA[i]);
+    // table.innerHTML = `<tr>`;
     for (let j = 0; j < arrA[i].length; j++) {
       // console.log(arrA[i][j]);
       // arrA[i][j];
+
       for (let k = 0; k < arrA[i][j].length; k++) {
         //   console.log("test");
         console.log(arrA[i][j][k]);
+        // table.innerHTML = `<td>${arrA[i][j][k]}</td>`;
       }
+      //   table.innerHTML = `</tr>`;
     }
   }
-} catch (exception) {
-  console.log(exception);
+} catch (tata) {
+  if (tata instanceof TypeError) {
+    console.log("coucou Olivier");
+  }
+  console.log(tata);
+} finally {
+  console.log("coucou");
 }
